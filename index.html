@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css.css" as="stylesheets">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="margen-cero">
+    <header class="fondo margen-cero centrado margen-abajo">
+        <div class="header-texto">
+            <h1>Formulario</h1>
+        </div>
+    </header>
+        <main class="contenedor centrado">
+            <form class="formulario grid" id="formulario">
+                <div class="formulario__contenedor margen-abajo">
+                    <label class="formulario__label" for="nombre">Nombre:</label>
+                    <input class="formulario__input border-none " type="text" id="nombre" placeholder="Ingresa tu nombre del usuario" required>
+                </div>
+                <div class="formulario__contenedor margen-abajo">
+                    <label class="formulario__label" for="email">Correo:</label>
+                    <input class="formulario__input border-none"  type="email" id="email" placeholder="Ingresa tu correo" required>
+                </div>
+                <div class="formulario__contenedor margen-abajo">
+                    <label class="formulario__label" for="password">Contraseña:</label>
+                    <input class="formulario__input border-none"  type="password" id="password" placeholder="Contraseña" required>
+                </div>
+                <div class="formulario__contenedor margen-abajo">
+                    <label class="formulario__label" for="numero">Número telefónico:</label>
+                    <input class="formulario__input border-none"  type="tel" id="numero" placeholder="Ingresa tu numero telefónico" maxlength="10" min="0" required>
+                </div>
+                <div class="formulario__contenedor margen-abajo">
+                    <label class="formulario__label" for="age">Edad:</label>
+                    <input class="formulario__input border-none"  type="tel" id="age" placeholder="Edad del usuario" min="0" maxlength="3" required>
+                </div>
+                <div class="formulario__contenedor margen-abajo">
+                    <label class="formulario__label" for="Genero">Genero:</label>
+                    <input class="formulario__input border-none" id="Genero" type="text" placeholder="Genero" required>
+                </div>
+                    <button type="submit" class="formulario__contenedor boton">Mostrar datos</button>
+            </form>
+        </main>
+        <section class="contenedor centrado section">
+            <h2 class="h2__section"  id="datos1"></h2>
+            <h2 class="h2__section"  id="datos2"></h2>
+            <h2 class="h2__section"  id="datos3"></h2>
+            <h2 class="h2__section"  id="datos4"></h2>
+            <h2 class="h2__section"  id="datos5"></h2>
+            <h2 class="h2__section"  id="datos6"></h2>
+        </section>
+
+        <footer class="contenedor centrado">
+            <p>Todos los derechos reservados @2025</p>
+        </footer>
+    <script src="js.js"></script>
+</body>
+</html>

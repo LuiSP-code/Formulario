@@ -1,0 +1,126 @@
+:root{
+    --colorP:#CFD8DC;
+    --colorS:#F5F5F5;
+    --colorBS:#E91E63;
+    --negro:#000;
+    --fuenteP:"Patrick Hand", serif;
+    --fuenteS:"monospace";
+    --fuenteH:"Roboto", serif;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: var(--fuenteP);
+}
+h1{
+    font-size: 7rem;
+}
+h2{
+    font-size: 3rem;
+}
+a{
+   text-decoration: none;
+   font-family: var(--fuenteP);
+   color: var(--colorS);
+}
+/* Utilidades */
+.contenedor{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+.centrado{
+    margin: 0 auto;
+    text-align: center;
+}
+.margen-cero{
+    margin: 0;
+}
+.margen-abajo{
+    margin-bottom: 5rem;
+}
+.margen-arriba{
+    margin-top: 5rem;
+}
+.padding-cero{
+    padding: 0;;
+}
+.border-none{
+    border: none;
+}
+
+/* Fondo header */
+.fondo{
+    background: linear-gradient(to right, #e44d26, #f16529);
+    padding: 1rem;
+}
+.header-texto{
+    font-family: var(--fuenteH);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--colorS);
+}
+
+/* Formulario */
+.formulario{
+    border-radius: 2rem;
+    background-color: var(--colorS);
+    box-shadow: 0px 12px 11px 2px rgba(0,0,0,0.5);
+    padding: 10rem;
+}
+.formulario__contenedor .boton{
+    max-width: 50%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: center ;
+}
+
+.formulario__label{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.formulario__input{
+    font-family: var(--fuenteP);
+    padding:0.5rem 2rem;
+}
+.boton{
+    background-color: var(--colorBS);
+    color: var(--colorS);
+    display: block;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 2rem;
+    text-transform: uppercase;
+    grid-column: 2/3;
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+a:hover{
+   background-color: var(--colorP);
+   color: var(--colorBS);
+}
+
+/* Footer */
+
+.section{
+    background-color: var(--colorS);
+    box-shadow: 2px 39px 45px 11px rgba(0,0,0,0.16);
+    margin-top: 10rem;
+    border-radius: 1rem;
+    border: solid var(--colorP) 3px;
+}
+.h2__section{
+    padding: 1rem 0.5rem;
+    color: var(--negro);
+    font-family: var(--fuenteH);
+}
